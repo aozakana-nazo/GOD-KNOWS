@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HINT - GOD KNOWS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f0f0; /* 全体の背景（明るいグレー） */
+            --accent-pink: #ff7eb9; /* アクセントのピンク */
+            --dark-gray: #333333; /* 文字・ボーダーの濃いグレー */
+            --checker-bg: #e5e5e5; /* チェッカーパターンの色 */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(45deg, var(--checker-bg) 25%, transparent 25%), 
+                linear-gradient(-45deg, var(--checker-bg) 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, var(--checker-bg) 75%), 
+                linear-gradient(-45deg, transparent 75%, var(--checker-bg) 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+            color: var(--dark-gray);
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .oswald {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.2em;
+        }
+
+        /* カスタムアコーディオンのスタイル */
+        details {
+            border: 1px solid var(--dark-gray);
+            margin-bottom: 1rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--accent-pink);
+        }
+
+        details[open] {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        summary {
+            padding: 0.5rem;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content {
+            padding: 1.5rem;
+            border-top: 1px solid #ddd;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 階層が深くなった時の装飾 */
+        details details {
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        .header-logo {
+            text-align: center;
+            padding: 4rem 1rem;
+            font-size: 3rem;
+            color: #999;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 4rem;
+        }
+
+        .pink-line {
+            height: 2px;
+            background-color: var(--accent-pink);
+            width: 50px;
+            margin: 1rem auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="max-w-3xl mx-auto px-4">
+        <!-- ヘッダー -->
+        <header class="header-logo">
+            <h1 class="oswald uppercase">GOD KNOWS</h1>
+            <div class="pink-line"></div>
+            <p class="text-xs oswald mt-2 tracking-widest text-gray-500">LINE謎『GOD KNOWS』のヒントサイトです</p>
+        </header>
+
+        <main>
+
+            <!-- ヒントセクションここから -->
+            <div class="hint-container">
+                
+                <!-- ステップ1のヒント -->
+                <details>
+                    <summary class="oswald uppercase">ステップ1</summary>
+                    <div class="content">
+                        
+                        <!-- 1問目のヒント -->
+                        <details>
+                            <summary class="text-sm">1問目</summary>
+                            <div class="content text-sm text-gray-700">
+                                <p class="mb-4">上の表は五十音表のようです。矢印が通る文字を読んでみましょう。</p>
+                                
+                                <details>
+                                    <summary class="text-sm text-pink-500 font-bold">答え</summary>
+                                    <div class="content bg-gray-50 p-4">
+                                        <p>なつかぜ（夏風邪）</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </details>
+
+                        <!-- 2問目のヒント -->
+                        <details>
+                            <summary class="text-sm">2問目</summary>
+                            <div class="content text-sm text-gray-700">
+                                <p class="mb-4">上の表は五十音表のようです。矢印が通る文字を読んでみましょう。</p>
+                                
+                                <details>
+                                    <summary class="text-sm text-pink-500 font-bold">答え</summary>
+                                    <div class="content bg-gray-50 p-4">
+                                        <p>なつかぜ（夏風邪）</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // 開閉時に少しスクロールを調整するなどの処理が必要な場合はここに追加
+        document.querySelectorAll('details').forEach((el) => {
+            el.addEventListener('toggle', (event) => {
+                if (el.open) {
+                    // 他の開いているものを閉じたい場合はここで制御可能（必要に応じて）
+                }
+            });
+        });
+    </script>
+</body>
+</html>
