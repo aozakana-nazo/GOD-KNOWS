@@ -159,9 +159,9 @@
                         <details>
                             <summary class="text-sm">3問目</summary>
                             <div class="content text-sm text-gray-700">
-                                <p class="mb-4">中央に書かれた矢印の周囲には4人の人影がいます。
-                                    それぞれの視点で見たとき、矢印はどちらを向いているでしょうか。
-                                    1の位置を推測して「1213」が表す言葉を考えましょう。
+                                <p class="mb-4">矢印に描かれた容器の個数に注目しましょう。
+                                    「つぶあん」に1個の容器を適用すると、1文字目である「つ」になるようです。
+                                    他の食べ物も同様に変換してみましょう。
                                 </p>
                                 
                                 <details>
@@ -624,19 +624,109 @@
                             <summary class="text-sm">その先のヒント</summary>
                             <div class="content text-sm text-gray-700">
                                 <p class="mb-4">ステップ4の1つ目の答え「理論」から、ステップ4の問題を復元するためのヒントです。
-                                    すでにステップ4の問題を復元できていて、ステップ4のもう1つの答えを求めたい方は、「さらにその先のヒント」をご覧ください。
+                                    <br>すでにステップ4の問題を復元できていて、ステップ4のもう1つの答えを求めたい方は、「さらにその先のヒント」をご覧ください。
                                 </p>
                                 
                                 <details>
-                                    <summary class="text-sm">ヒント1</summary>
+                                    <summary class="text-sm">どこから手を付ければよいか分からない</summary>
                                     <div class="content text-sm text-gray-700">
-                                        <p>まず、ステップ4のまとめの謎のルールを分析する必要があります。
-                                            この謎はサイコロを全てのマスを通るように転がして一周させるというものです。
-                                            ノイズには隠れていますが、この盤面でサイコロを一周させる方法は（スタート地点の違いと出発する方向を無視すれば）1通りしかありません。
-                                            <br>また、「ん」の面が上になる文字を読むことと、進行方向3マス目が「ん」の面になるというルールを思い出してください。
-                                            これらから、答えが「理論」になるためには、1通りしかないルートにそって「り」のマスから3マス離れたマスにサイコロを配置する必要があります。
-                                            「り」のマスの先でサイコロを転がすと「ろ」「ん」になると考えて進行方向を特定しましょう。
-                                            その方向に「り」から3マス戻った先が配置マスであり、同時にAの問題の答えの1文字目でもあります。また、そこから1マス進んだマスがAの問題の答えの最後の文字です。
+                                        <p>まずは、ステップ4のまとめの謎の答えが「理論」になるよう、まとめの謎のルールを分析しましょう。
+                                            これによりAの答えの頭文字、最後の文字が分かります。
+                                        </p>
+
+                                        <details>
+                                            <summary class="text-sm">ヒント1</summary>
+                                            <div class="content text-sm text-gray-700">
+                                                <p>この謎は立方体を全てのマスを通るように転がして一周させるというものです。
+                                                    ノイズに隠れてはいますが、この盤面で立方体を一周させる方法は（スタート地点の違いと出発する方向を無視すれば）1通りしかありません。
+                                                    目に見えている壁の位置からその通り方を導きましょう。
+                                                    <br>なお、盤面は5×5の大きさで、中央のマスを除いて壁になっているマスは存在しません。
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details>
+                                            <summary class="text-sm">ヒント2</summary>
+                                            <div class="content text-sm text-gray-700">
+                                                <p>立方体を1周させるルートは次のようになります（辺上の壁の位置は確定しません）。
+                                                    <img src="img/4_matome_ans.png" class="w-full">
+                                                    続いて、立方体の配置に関するルールを分析しましょう。
+                                                    ルールに注目して考えれば、立方体をどこに配置したか、1つに確定します。
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details>
+                                            <summary class="text-sm">ヒント3</summary>
+                                            <div class="content text-sm text-gray-700">
+                                                <p>立方体には、「ん」の面が上になる文字を読むという読み方と、進行方向3マス目で「ん」の面が上になるというルールがありました。
+                                                    これらから、答えが「理論」になるためには、前のヒントにあるルートに沿って「り」のマスから3マス離れたマスに立方体を配置するということが分かります。
+                                                    「り」のマスの先で立方体を転がすと「ろ」「ん」になると考えて進行方向を特定しましょう。
+                                                    進行方向が分かれば、その方向に「り」から3マス戻った先が配置マスであり、同時にAの問題の答えの1文字目でもあります。
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details>
+                                            <summary class="text-sm text-pink-500 font-bold">答え</summary>
+                                            <div class="content bg-gray-50 p-4">
+                                                <p>Aの答えの1文字目は「も」、最後の文字は「ち」です。</p>
+                                                <img src="img/4_matome_ans2.png" class="w-full">
+                                            </div>
+                                        </details>
+                                        
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary class="text-sm">Aの問題を復元したい</summary>
+                                    <div class="content text-sm text-gray-700">
+                                        <p>まずは、Aの問題のノイズの下にある二重枠に注目しましょう。この二重枠に見覚えがないでしょうか。
+                                        </p>
+
+                                        <details>
+                                            <summary class="text-sm">ヒント1</summary>
+                                            <div class="content text-sm text-gray-700">
+                                                <p>Aの問題の二重枠は、ステップ1の5問目にありました。
+                                                </p>
+                                                <img src="img/1_5_noise.png" class="w-full">
+                                                <p>Aの問題の答えは「ドン」です。
+                                                    メダルを埋めること、答えが「ドン」になることから、ノイズの下を特定して二重枠の中身を復元しましょう。
+                                                </p>
+                                            </div>
+                                        </details>
+
+                                        <details>
+                                            <summary class="text-sm text-pink-500 font-bold">答え</summary>
+                                            <div class="content bg-gray-50 p-4">
+                                                <p>二重枠は次のようになっています。</p>
+                                                <img src="img/1_5.png" class="w-full">
+                                            </div>
+                                        </details>
+                                        
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary class="text-sm">Cの問題を復元したい</summary>
+                                    <div class="content text-sm text-gray-700">
+                                        <p>続いて、Cの問題に取り組みましょう。Cの問題に描かれた▶と「ボード」という言葉に見覚えはないでしょうか。▶と「ボード」という言葉はステップ2のまとめの謎にありました。
+                                        </p>
+                                        <img src="img/2_2_noise.png" class="w-full">
+                                        <p>このボードの謎の切り取られ方を見ると、答えが「し」から始まる3文字であると分かります。
+                                            そのような答えになる謎を探し出し、「ボード」を復元しましょう。
+                                        </p>
+                                    </div>
+                                </details>
+
+                                <details>
+                                    <summary class="text-sm">ヒント6</summary>
+                                    <div class="content text-sm text-gray-700">
+                                        <p>「し」から始まる3文字の答えになる謎は1つしかありません。
+                                            それは、ステップ1のまとめの謎、「しぜん」です。
+                                        </p>
+                                        <img src="img/1_6_noise.png" class="w-full">
+                                        <p>この謎がステップ1のまとめの謎であることに注意して、ボードを復元しましょう。
                                         </p>
                                     </div>
                                 </details>
