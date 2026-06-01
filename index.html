@@ -19,6 +19,13 @@
 
         body {
             background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(45deg, var(--checker-bg) 25%, transparent 25%), 
+                linear-gradient(-45deg, var(--checker-bg) 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, var(--checker-bg) 75%), 
+                linear-gradient(-45deg, transparent 75%, var(--checker-bg) 75%);
+            background-size: 40px 40px;
+            background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
             color: var(--dark-gray);
             font-family: 'Noto Sans JP', sans-serif;
             margin: 0;
@@ -1118,16 +1125,5 @@
             </div>
         </main>
     </div>
-
-    <script>
-        // 開閉時に少しスクロールを調整するなどの処理が必要な場合はここに追加
-        document.querySelectorAll('details').forEach((el) => {
-            el.addEventListener('toggle', (event) => {
-                if (el.open) {
-                    // 他の開いているものを閉じたい場合はここで制御可能（必要に応じて）
-                }
-            });
-        });
-    </script>
 </body>
 </html>
